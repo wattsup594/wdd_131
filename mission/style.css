@@ -64,3 +64,23 @@ li {
     width: 250px;
     height: auto;
 }
+
+#theme-select {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 6px;
+}
+
+.dark {
+    background-color: #111;
+    color: white;
+}
+
+.dark .para {
+    border-color: white;
+}
+
+.dark h2 {
+    color: #7db7e8;
+    border-bottom-color: #555;
+}
