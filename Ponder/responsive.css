@@ -20,16 +20,23 @@ section {
   padding: 20px;
   background-color: white;
   margin: 1em;
-  border: 1px solid #ccc;
+  border: 2px solid black;
 }
 nav a {
     padding: 20px;
     color: black;
-    display: none;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid gray;
 }
 nav a:hover {
     text-decoration: none;
     color: #616061;
+}
+
+.hide {
+    display: none;
 }
 .menu-btn {
     cursor: pointer;
@@ -41,10 +48,23 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 1.2s;
 }
 footer {
     text-align: center;
 }
+
+.change .bar1 {
+  transform: translate(0, 9.15px) rotate(-45deg);
+}
+.change .bar2 {
+    transform: translate(0, 0) rotate(90deg);
+}
+
+.change .bar3 {
+  transform: translate(0, -9.15px) rotate(45deg);
+}
+          
 
 
 
@@ -59,9 +79,13 @@ main {
 }
 nav a {
     display: inline;
+    border: none;
 }
 nav {
-    text-align: right;
+    text-align: center;
+}
+.hide {
+    display: block;
 }
 }
 
