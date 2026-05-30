@@ -44,8 +44,9 @@ main {
 
 .book-review {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 150px 1fr;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .book-details {
@@ -62,6 +63,7 @@ main {
 .book-content h2 {
   color: #a30f35;
   font-size: 1.2rem;
+  margin-top: 0;
 }
 
 .book-content img {
@@ -72,8 +74,9 @@ main {
 }
 
 .book-content p {
-  max-width: 450px;
+  max-width: 500px;
   font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 footer {
@@ -95,7 +98,7 @@ footer {
   }
 
   .book-details {
-    text-align: right;
+    text-align: left;
     border-right: none;
     padding-right: 0;
   }
