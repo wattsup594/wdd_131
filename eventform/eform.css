@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c2d3dd;
+    padding: 2rem;
+}
+
+.ticket-card {
+    width: 500px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #777;
+    font-size: 1rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.6rem;
+    background: #c2d3dd;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#errors {
+    margin-top: 1rem;
+    color: darkred;
+    font-weight: bold;
+}
+
+#ticketOutput {
+    margin-top: 1rem;
+}
+
+#ticketOutput h2 {
+    margin-bottom: 0.5rem;
+}

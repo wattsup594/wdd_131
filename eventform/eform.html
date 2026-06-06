@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eform.css">
+    <script src="eform.js" defer></script>
+    <link rel="icon" href="favicon1.ico">
+    <title>Event Form</title>
+</head>
+<body>
+    <main class="page">
+        <form id="ticketForm" class="ticket-card">
+            <h1>Event Ticket</h1>
+            
+            <div class="row">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+
+            </div>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <div class="row">
+                <div>
+                    <label for="type">Type</label>
+                    <select  id="type" required>
+                        <option value="">Choose One</option>
+                        <option value="student">Student</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+            </div>
+
+            <div id="extraField" class="hidden">
+                <label for="extraInput" id="extraLabel"></label>
+                <input type="text" id="extraInput">
+            </div>
+
+            <button type="submit">Create Ticket</button>
+
+            <div id="errors"></div>
+            <div id="ticketOutput"></div>
+        </form>
+    </main>
+    
+</body>
+</html>
