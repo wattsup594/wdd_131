@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive character card using javascript to attack the character and level them up">
+    <meta name="author" content="Kaden Watts">
+    <link rel="stylesheet" href="card.css">
+    <script src="card.js" defer></script>
+    <title>Character Card</title>
+
+     <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="Interactive RPG Character Card">
+    <meta property="og:url" content="https://wattsup594.github.io/wdd_131/charactercard/">
+    <meta property="og:image" content="https://wattsup594.github.io/wdd_131/charactercard/images/snortleblat.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="Interactive RPG Character Card">
+    <meta name="twitter:image" content="https://wattsup594.github.io/wdd_131/charactercard/images/snortleblat.png">
+
+    <!-- Icons -->
+    <link rel="icon" href="images/snortleblat.png">
+    <link rel="apple-touch-icon" href="images/snortleblat.png">
+</head>
+<body>
+    <div class="card">
+
+        <img id="characterImage" class="Image"  src="images/snortleblat.png" alt="Snortleblat Character Standing In A Swamp">
+        <div class="name" id="characterName"></div>
+
+        <div class="stats">
+            <p><strong>Class:</strong> <span id="characterClass"></span></p>
+            <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+            <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+        </div>
+
+        <div class="buttons">
+            <button id="attackBtn">Attack</button>
+            <button id="levelBtn">Level Up</button>
+        </div>
+    </div>
+</body>
+</html>
