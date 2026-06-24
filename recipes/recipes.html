@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
-    <meta name="description" content="A recipe book website with an apple crisp recipe.">
+    <meta name="description" content="A recipe book website with searchable recipes.">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Recipe Book">
-    <meta property="og:description" content="A recipe book website with an apple crisp recipe.">
+    <meta property="og:description" content="A recipe book website with searchable recipes.">
     <meta property="og:image" content="images/social-preview-image.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Recipe Book">
-    <meta name="twitter:description" content="A recipe book website with an apple crisp recipe.">
+    <meta name="twitter:description" content="A recipe book website with searchable recipes.">
     <meta name="twitter:image" content="images/social-preview-image.png">
 
     <link rel="icon" href="favicon.ico">
@@ -21,7 +21,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap">
     <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
 </head>
+
 <body>
     <header>
         <img src="images/recipe-book.png" alt="Recipe Book Logo" class="logo">
@@ -29,35 +31,21 @@
     </header>
 
     <main>
-        <section class="search-area">
+        <form class="search-area" id="search-form">
             <label for="recipe-search" class="sr-only">Find a recipe</label>
-            <input type="search" id="recipe-search" placeholder="Find a recipe">
-            <button type="button" aria-label="Search">
-                <img src="images/search.svg" alt="Search">
+
+            <input 
+                type="search" 
+                id="recipe-search" 
+                placeholder="Find a recipe"
+            >
+
+            <button type="submit" aria-label="Search">
+                <img src="images/search.svg" alt="">
             </button>
-        </section>
+        </form>
 
-        <section class="recipe-card">
-            <img src="images/apple-crisp.jpg" alt="Apple crisp topped with vanilla ice cream" class="recipe-img">
-
-            <div class="recipe-info">
-                <span class="tag">dessert</span>
-                
-                <h2>Apple Crisp</h2>
-
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">☆</span>
-                </span>
-
-                <p class="description">
-                    This apple crisp recipe is a simple yet delicious fall dessert that’s great served warm with vanilla ice cream.
-                </p>
-            </div>
-        </section>
+        <section id="recipe-output" class="recipe-output"></section>
     </main>
 
     <footer>
@@ -66,12 +54,11 @@
         </a>
 
         <div class="social">
-             <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
             <a href="#"><img src="images/instagram_icon.svg" alt="Instagram Icon"></a>
             <a href="#"><img src="images/youtube_icon.svg" alt="Youtube icon"></a>
             <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest icon"></a>
         </div>
     </footer>
-    
 </body>
 </html>
